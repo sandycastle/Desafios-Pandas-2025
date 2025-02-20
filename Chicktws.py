@@ -12,7 +12,6 @@ print("1. Average chick weight for each feed type: \n", average_weight.reset_ind
 highest_avg_feed = average_weight.idxmax()
 print("\n 2. Feed that resulted in the highest average weight:", highest_avg_feed)
 
-
 # 3. Create a table showing the maximum, minimum, and average weight for each feed type
 summary_table = df_Chickwts.groupby('feed')['weight'].agg(['max', 'min', 'mean'])
 print("\n 3. Table showing the maximum, minimum, and average weight for each feed type:\n", summary_table.reset_index())
